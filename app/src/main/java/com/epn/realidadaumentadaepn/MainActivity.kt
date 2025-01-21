@@ -16,9 +16,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.epn.realidadaumentadaepn.ui.screens.ARScreen
-import com.epn.realidadaumentadaepn.ui.screens.AlphabetScreen
 import com.epn.realidadaumentadaepn.ui.screens.HomeScreen
-import com.epn.realidadaumentadaepn.ui.screens.QuizScreen
 import com.epn.realidadaumentadaepn.ui.theme.RealidadAumentadaEPNTheme
 import com.epn.realidadaumentadaepn.ui.navigation.NavRoutes
 import androidx.navigation.NavType
@@ -50,12 +48,6 @@ class MainActivity : ComponentActivity() {
                             if (locationName != null) {
                                 ARScreen(navController, locationName)
                             }
-                        }
-                        composable(NavRoutes.ALPHABET) {
-                            AlphabetScreen(navController)
-                        }
-                        composable(NavRoutes.QUIZ) {
-                            QuizScreen()
                         }
                     }
                 }

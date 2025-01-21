@@ -13,39 +13,6 @@ import io.github.sceneview.node.ModelNode
 
 object Utils {
 
-    val alphabets = mapOf(
-        "A" to "apple.glb",
-        "B" to "ball.glb",
-        "C" to "cat.glb",
-        "D" to "dog.glb",
-        "E" to "elephant.glb",
-        "F" to "fox.glb",
-        "G" to "goat.glb",
-        "H" to "hen.glb",
-        "I" to "icecream.glb",
-        "J" to "jug.glb",
-        "K" to "kite.glb",
-        "L" to "lion.glb",
-        "M" to "monkey.glb",
-        "N" to "nest.glb",
-        "O" to "owl.glb",
-        "P" to "parrot.glb",
-        "Q" to "quail.glb",
-        "R" to "rat.glb",
-        "S" to "ship.glb",
-        "T" to "telephone.glb",
-        "U" to "umbrella.glb",
-        "V" to "van.glb",
-        "W" to "watch.glb",
-        "X" to "xylophone.glb",
-        "Y" to "yacht.glb",
-        "Z" to "zebra.glb"
-    )
-
-    fun getModelForAlphabet(alphabet:String): String{
-        val modelName = alphabets[alphabet] ?: error("Model not found")
-        return "models/$modelName"
-    }
     fun createAnchorNode(
         engine: Engine,
         modelLoader: ModelLoader,
